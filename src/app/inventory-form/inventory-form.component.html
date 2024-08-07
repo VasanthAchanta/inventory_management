@@ -1,0 +1,20 @@
+<div class="newEntryContainer">
+  <h3> Add New Entry</h3>
+  <form class="formContainer">
+    <div class="formElement">
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="name" name="name" required>
+    </div>
+    <div class="formElement">
+      <label for="description">Description:</label>
+      <input id="description" [(ngModel)]="description" name="description" required>
+    </div>
+    <div class="formElement">
+      <label for="price">Price:</label>
+      <input id="price" [(ngModel)]="price" name="price" required type="number">
+    </div>
+  </form>
+  <!-- HTML !-->
+<button class="button-10" role="button"(click)="addItem()">Add Entry</button>
+</div>
+

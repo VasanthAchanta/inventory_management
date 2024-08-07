@@ -1,0 +1,19 @@
+<div class="itemsContainer">
+
+  <div class="itemCard" *ngFor="let item of items">
+    <h3>Product Name: {{ item.name }}</h3>
+    <p>Description :{{ item.description }}</p>
+    <p>Price :{{ item.price | currency }}</p>
+    <div style="display: flex;justify-content: center;">
+
+      <button class="button-45" role="button" (click)="deleteItem(item.id)" >Delete</button>
+      <button class="button-45 edit" role="button" (click)="editItem(item)" >Edit</button>
+    </div>
+
+  </div>
+</div>
+
+<app-inventory-form (itemAdded)="loadItems()"></app-inventory-form>
+
+<!-- Display edit form if an item is selected -->
+<app-inventory-edit *ngIf="edit" [item]="selectedItem" (itemUpdated)="loadItems()"></app-inventory-edit>

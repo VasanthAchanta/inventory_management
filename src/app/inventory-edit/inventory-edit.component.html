@@ -1,0 +1,28 @@
+<div *ngIf="item" class="editContainer">
+  <h3>Edit Item</h3>
+  <form class="formContainer">
+    <div class="formElement">
+
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="name" name="name" required>
+    </div>
+
+    <div class="formElement">
+
+      <label for="description">Description:</label>
+      <input id="description" [(ngModel)]="description" name="description" required>
+    </div>
+    <div class="formElement">
+
+      <label for="price">Price:</label>
+      <input id="price" [(ngModel)]="price" name="price" type="number" required>
+    </div>
+
+    <!-- Add additional fields as needed -->
+  </form>
+  <div style="display: flex;padding: 5px;">
+    <!-- HTML !-->
+    <button class="button-10" role="button"(click)="updateItem('update')">Update Item</button>
+    <button class="button-10" role="button"(click)="updateItem('cancel')">Cancel</button>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+.itemCard{
+    background-color: bisque;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+}
+.itemsContainer{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #cfe5f9;
+}
+
+
+/* CSS */
+.button-45 {
+    align-items: center;
+    background-color: #FFE7E7;
+    background-position: 0 0;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+    outline: 0;
+}
+.button-45.edit:active,
+.button-45.edit:hover,
+.button-45.edit:focus {
+    outline: 0;
+}
+
+
+.button-45:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-45:hover {
+    background-color: #FFE3E3;
+    border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+.button45.edit{
+    color: #2c7ad3 !important;
+    border: 1px solid #e0eefe;
+    background-color: #e7f5ff;
+}
+.button-45.edit:active {
+  background-color: #4078d7;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.button-45.edit:hover {
+  background-color: #e3fbff;
+  border-color: #a4e0fa;
+}
+
+.button-45.edit:active:hover,
+.button-45.edit:focus:hover,
+.button-45.edit:focus {
+  background-color: #2cb2d3;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
